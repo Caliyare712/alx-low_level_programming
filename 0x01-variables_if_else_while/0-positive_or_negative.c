@@ -21,7 +21,7 @@ int main(void)
 				n = rand() - RAND_MAX / 2;
 
 					/* your code goes there */
-				printf("%i",n);
+				printf("%d\n" ,n);
 
 					return (0);
 
