@@ -22,7 +22,7 @@ int main(void)
 
 					/* your code goes there */
 
-				printf("%d,n");
+				printf("%f2,n");
 					return (0);
 
 }
