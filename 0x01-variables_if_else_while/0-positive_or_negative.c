@@ -1,8 +1,7 @@
+#include <stfio.h>
 #include <stdlib.h>
-
 #include <time.h>
 
-#include <stdio.h>
 
 /* more headers goes there */
 
@@ -13,7 +12,7 @@
 int main(void)
 
 {
-
+i
 		int n;
 
 
@@ -26,9 +25,9 @@ int main(void)
 
 				if (n>0)
 				printf("%d is positive\n" ,n);
-				else if (n==0)
+				if (n==0)
 					printf("%d is Zero\n",n);
-				else
+				if(n<0)
 					printf("%d is negative\n",n);
 
 					return (0);
