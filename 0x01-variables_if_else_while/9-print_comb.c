@@ -12,7 +12,7 @@ int main(void)
 
 {
 
-ii	int ch;
+	int ch;
 
 	for (ch = 48; ch <= 57; ch++)
 
