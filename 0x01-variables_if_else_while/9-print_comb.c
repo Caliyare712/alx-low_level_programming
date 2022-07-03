@@ -12,7 +12,7 @@ int main(void)
 
 {
 
-	int ch;
+ii	int ch;
 
 	for (ch = 48; ch <= 57; ch++)
 
@@ -43,7 +43,3 @@ int main(void)
 	return (0);
 
 }
-
-Footer
-
-© 2022 GitHub
