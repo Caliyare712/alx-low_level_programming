@@ -9,24 +9,24 @@ int main(void)
 
 {
 
-		char *sh = "Holberton";
+		char *sh = "_putchar";
 
 
 
-			while (*sh)
+		while (*sh)
 
-					{
+		{
 
-								_putchar(*sh);
+			_putchar(*sh);
 
-										sh++;
-
-											}
-
-				_putchar('\n');
+			sh++;
+		}
 
 
+		_putchar('\n');
 
-					return (0);
+
+
+		return (0);
 
 }
