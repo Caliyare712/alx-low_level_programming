@@ -2,8 +2,10 @@
 
 /**
  * main - prints the multiplication of integers
+ * var a
+ * var b
  * return: 0
- */
+*/
 
 int mul(int a, int b)
 {
