@@ -20,8 +20,8 @@ void print_most_numbers(void)
 
 		{
 
-	
 			if (a != 52)
+
 			{
 
 				_putchar(a);
