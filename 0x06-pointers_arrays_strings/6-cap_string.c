@@ -1,52 +1,32 @@
 #include "main.h"
-
-int char_is_seperator(char ch);
-
-/**
- *  * cap_string - capitalizes first letters of str
- *    * @str: string to capitalize letters
- *      * Return: pointer to str
-*/
-
-char *cap_string(char *str)
-{
-	int i = 0;
-
-	while (str[i] != '\0')
-	{
-		if (i == 0)
-		{
-			if (str[i] >= 'a' && str[i] <= 'z')
-				str[i] -= 32;									
-		}
-		if (char_is_seperator(str[i]))
-		{
-			if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
-				str[i + 1] -= 32;
-		}
-		i++;
-	}
-	return (str);
-}
+#include <stdio.h>
 
 /**
- *  * char_is_seperator - checks if char is a seperator
- *    * @ch: character to check
- *      * Return: 1 if seperator, 0 otherwise
+ *   * cap_string - ...
+ *     * @s: ...
+ *         * Return: char value
 */
 
-int char_is_seperator(char ch)
+char *cap_string(char *s)
 {
-	int i = 0;
-	int numSeperators = 13;
-	char seperators[] = { ' ', '\t', '\n', ',',
-		';', '.', '!', '?', '"',
-		'(', ')', '{', '}' };
+	int a = 0, i;
+	int cspc = 13;
+	char spc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
 
-	while (i < numSeperators)
+	while (s[a])
 	{
-		if (ch == seperators[i++])
-			return (1);
+		i = 0;
+
+		while (i < cspc)
+		{
+			if ((a == 0 || s[a - 1] == spc[i]) && (s[a] >= 97 && s[a] <= 122))
+				s[a] -= 32;
+
+			i++;
+																	
+		}
+
+		a++;
 	}
-	return (0); /* didn't find one */
+	return (s);
 }
