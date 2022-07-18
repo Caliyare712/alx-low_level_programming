@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 /**
  * *_strstr - The _strstr() function finds the first occurrence
