@@ -1,7 +1,7 @@
 nclude "main.h"
 
 /**
- *  * factorial - Returns the factorial of a given number @
+ *  * factorial - Returns the factorial of a given number @n
  *    * @n: The number
  *      * Return: An integer, the result of @n factorial
 */
