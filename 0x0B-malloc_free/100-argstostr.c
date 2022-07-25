@@ -48,6 +48,6 @@ char *argstostr(int ac, char **av)
 		k++;
 		i++;
 	}
-	str[k] = '\0';
+	str[k] = NULL;
 	return (str);
 }
