@@ -1,6 +1,7 @@
 #include <stdlib.h>
 
 /**
+ * *strtow
  *   * @str: pointer to string params
  *    * Return: char
 */
