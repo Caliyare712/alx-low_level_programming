@@ -23,6 +23,7 @@ char *create_buffer(char *file)
 				"Error: Can't write to %s\n", file);
 		exit(99);
 	}
+
 	return (buffer);
 }
 
@@ -53,7 +54,7 @@ void close_file(int fd)
  *        * Description: If the argument count is incorrect - exit code 97.
  *         *       If file_from does not exist or cannot be read - exit code 98.
  *          *        If file_to cannot be created or written to - exit code 99.
- *        *            If file_to or file_from cannot be closed - exit code 100.
+ *           *        If file_to or file_from cannot be closed - exit code 100.
 */
 
 int main(int argc, char *argv[])
@@ -76,7 +77,8 @@ int main(int argc, char *argv[])
 		if (from == -1 || r == -1)
 		{
 			dprintf(STDERR_FILENO,
-				"Error: Can't read from file %s\n", argv[1]);
+					"Error: Can't read from file %s\n", 
+					argv[1]);
 			free(buffer);
 			exit(98);
 		}
