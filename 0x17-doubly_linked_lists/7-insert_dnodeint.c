@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  *  * insert_dnodeint_at_index - Add node at nth index
  *    * @h: Head of node
